@@ -15,9 +15,9 @@ ingress:
   servicePort: https
   tls: true
   extraTls:
-  - hosts:
-    - keycloak.demo.potomacempire.com
-    secretName: keycloak-tls
+    - hosts:
+        - keycloak.demo.potomacempire.com
+      secretName: keycloak-tls
 postgresql:
   enabled: true
   postgresqlPassword: psqldbpass12345
