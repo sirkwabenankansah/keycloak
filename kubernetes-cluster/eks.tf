@@ -40,9 +40,9 @@ module "eks" {
 
   eks_managed_node_groups = {
     realworld-ng = {
-      min_size     = 1
+      min_size     = 3
       max_size     = 5
-      desired_size = 1
+      desired_size = 3
       iam_role_additional_policies = {
           ec2_access = "arn:aws:iam::aws:policy/AmazonEC2FullAccess"
       }
